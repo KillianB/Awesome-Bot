@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="69782846-6cc8-48ac-aeb8-24911c007a1d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/runConfigurations/bin_www.xml" afterPath="$PROJECT_DIR$/.idea/runConfigurations/bin_www.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/RTMClient.js" afterPath="$PROJECT_DIR$/bin/RTMClient.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/www" afterPath="$PROJECT_DIR$/bin/www" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
     </list>
     <ignored path="Awesome Bot.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -676,7 +672,7 @@
       <workItem from="1479397568343" duration="29000" />
       <workItem from="1479419185602" duration="100000" />
       <workItem from="1479456574049" duration="8620000" />
-      <workItem from="1479475873797" duration="1212000" />
+      <workItem from="1479475873797" duration="1269000" />
     </task>
     <task id="LOCAL-00001" summary="Adding in Github for Server implementation">
       <created>1479465889227</created>
@@ -692,11 +688,18 @@
       <option name="project" value="LOCAL" />
       <updated>1479466938453</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Changing Token and Start Boot">
+      <created>1479478607143</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1479478607143</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44611000" />
+    <option name="totallyTimeSpent" value="44668000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -780,7 +783,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Adding in Github for Server implementation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding in Github for Server implementation" />
+    <MESSAGE value="Changing Token and Start Boot" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changing Token and Start Boot" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
