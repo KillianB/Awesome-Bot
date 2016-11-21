@@ -36,8 +36,8 @@
       <file leaf-file-name="RTMClient.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/bin/RTMClient.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="4" column="33" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
+            <state relative-caret-position="22">
+              <caret line="1" column="41" selection-start-line="1" selection-start-column="41" selection-end-line="1" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -665,7 +665,7 @@
       <workItem from="1479456574049" duration="8620000" />
       <workItem from="1479475873797" duration="2544000" />
       <workItem from="1479480362132" duration="1134000" />
-      <workItem from="1479734742427" duration="292000" />
+      <workItem from="1479734742427" duration="948000" />
     </task>
     <task id="LOCAL-00001" summary="Adding in Github for Server implementation">
       <created>1479465889227</created>
@@ -702,11 +702,18 @@
       <option name="project" value="LOCAL" />
       <updated>1479478620793</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Changing the Way to read Token">
+      <created>1479735076685</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1479735076685</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47369000" />
+    <option name="totallyTimeSpent" value="48025000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -791,7 +798,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Adding in Github for Server implementation" />
     <MESSAGE value="Changing Token and Start Boot" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changing Token and Start Boot" />
+    <MESSAGE value="Changing the Way to read Token" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changing the Way to read Token" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1132,8 +1140,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/bin/RTMClient.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="33" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
+        <state relative-caret-position="22">
+          <caret line="1" column="41" selection-start-line="1" selection-start-column="41" selection-end-line="1" selection-end-column="41" />
           <folding />
         </state>
       </provider>
