@@ -1,5 +1,5 @@
 var RtmClient = require('@slack/client').RtmClient;
-var token = process.env.OPENSHIFT_ENV_VAR; // Can't integrate the token in repository -> Failed to auth
+var token = process.env.OPENSHIFT_ENV_VAR.Token; // Can't integrate the token in repository -> Failed to auth
 var MemoryDataStore = require('@slack/client').MemoryDataStore;
 var CLIENT_EVENTS = require('@slack/client').CLIENT_EVENTS;
 var RTM_EVENTS = require('@slack/client').RTM_EVENTS;
