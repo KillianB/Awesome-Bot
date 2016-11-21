@@ -1,5 +1,5 @@
 var RtmClient = require('@slack/client').RtmClient;
-var token = 'xoxb-93294615989-w0NDJHcIlIxuIS2D3ateICLi';
+var token = process.env.BOT_TOKEN; // Can't integrate the token in repository -> Failed to auth
 var MemoryDataStore = require('@slack/client').MemoryDataStore;
 var CLIENT_EVENTS = require('@slack/client').CLIENT_EVENTS;
 var RTM_EVENTS = require('@slack/client').RTM_EVENTS;
