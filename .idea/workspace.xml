@@ -36,8 +36,8 @@
       <file leaf-file-name="RTMClient.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/bin/RTMClient.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="1" column="45" selection-start-line="1" selection-start-column="45" selection-end-line="1" selection-end-column="45" />
+            <state relative-caret-position="264">
+              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -665,7 +665,7 @@
       <workItem from="1479456574049" duration="8620000" />
       <workItem from="1479475873797" duration="2544000" />
       <workItem from="1479480362132" duration="1134000" />
-      <workItem from="1479734742427" duration="1354000" />
+      <workItem from="1479734742427" duration="1798000" />
     </task>
     <task id="LOCAL-00001" summary="Adding in Github for Server implementation">
       <created>1479465889227</created>
@@ -716,11 +716,18 @@
       <option name="project" value="LOCAL" />
       <updated>1479738799624</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Changing the way to read Token (step 3)">
+      <created>1479739198424</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1479739198424</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48431000" />
+    <option name="totallyTimeSpent" value="48875000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -807,7 +814,8 @@
     <MESSAGE value="Changing Token and Start Boot" />
     <MESSAGE value="Changing the Way to read Token" />
     <MESSAGE value="Changing the way to read Token (step 2)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changing the way to read Token (step 2)" />
+    <MESSAGE value="Changing the way to read Token (step 3)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changing the way to read Token (step 3)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1141,8 +1149,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/bin/RTMClient.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" column="45" selection-start-line="1" selection-start-column="45" selection-end-line="1" selection-end-column="45" />
+        <state relative-caret-position="264">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding />
         </state>
       </provider>
