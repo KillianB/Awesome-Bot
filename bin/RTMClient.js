@@ -34,7 +34,7 @@ rtm.on(CLIENT_EVENTS.RTM.RTM_CONNECTION_OPENED, function() {
 
 rtm.on(RTM_EVENTS.MESSAGE, function handleRtmMessage(message) {
     //Message handler : Logs of all messages sent in channels
-    console.log('Message : ' + message.text + '\nFrom : ' + message.user + '\nIn : ' + message.channel);
+    console.log('Message : ' + message.text + ' from ' + message.user + ' in : ' + message.channel);
 });
 
 rtm.on(RTM_EVENTS.MESSAGE, function handleRtmMessage(message) {
