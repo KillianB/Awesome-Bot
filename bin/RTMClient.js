@@ -33,10 +33,33 @@ rtm.on(CLIENT_EVENTS.RTM.RTM_CONNECTION_OPENED, function() {
 });
 
 rtm.on(RTM_EVENTS.MESSAGE, function handleRtmMessage(message) {
-    //Message handler : Logs of all messages sent in channels
     console.log('Message : ' + message.text + ' from ' + message.user + ' in : ' + message.channel);
-});
 
-rtm.on(RTM_EVENTS.MESSAGE, function handleRtmMessage(message) {
-    rtm.sendMessage("Hello <@" + message.user + ">!" + " By sending : " + message.text, message.channel);
+    if (message.text == "!Help"){
+        rtm.sendMessage("L'aide n'est pas encore disponible <@" + message.user + "> !!\n Cependant, tu peux toujours envoyer un message à @killian.barreau pour plus d'informations", message.channel)
+    } else if (message.text == "!Extranet"){
+        rtm.sendMessage("L'extranet est disponible grâce à ce lien :\n https://extranet.ynov.com/", message.channel)
+
+    } else if (message.text == "!Mail"){
+        rtm.sendMessage("Hey ! Voilà l'adresse de ta messagerie Ynov :\n https://outlook.office365.com/owa/?realm=ynov.com", message.channel)
+
+    } else if (message.text == "!Sp"){
+        rtm.sendMessage("Le sharepoint est disponible à cette adresse : *\n https://auvencecom.sharepoint.com/sites/Nantes/default.aspx\n \n Si tu veux accéder au sharepoint de ta classe, tape !Sp classe", message.channel)
+
+    } else if (message.text == "!Hp"){
+        rtm.sendMessage("Voici ton planning pour la semaine <@" + message.user  + "\n https://scolarite.ynov.com/etudiant?identifiant=cbnQWV6TQcC9u4BT", message.channel)
+
+    } else if (message.text == "!Fb"){
+        rtm.sendMessage("Voila les différentes pages Facebook associées à Ynov Nantes : ", message.channel)
+
+    } else if (message.text == "!Twitter"){
+
+    } else if (message.text == "!Agenda"){
+
+    } else if (message.text == "!Vacances"){
+
+    }
+    else {
+        rtm.sendMessage("Hello <@" + message.user + ">!" + " By sending : " + message.text, message.channel);
+    }
 });
