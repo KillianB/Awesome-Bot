@@ -45,8 +45,7 @@ rtm.on(RTM_EVENTS.MESSAGE, function handleRtmMessage(message) {
         rtm.sendMessage("Hey ! Voilà l'adresse de ta messagerie Ynov :\n https://outlook.office365.com/owa/?realm=ynov.com", message.channel)
 
     } else if (message.text == "!Sp"){
-        rtm.sendMessage("Le sharepoint est disponible à cette adresse : *\n https://auvencecom.sharepoint.com/sites/Nantes/default.aspx" +
-            "\n \n Si tu veux accéder au sharepoint de ta classe, tape !Sp classe", message.channel)
+        rtm.sendMessage("Le sharepoint est disponible à cette adresse : *\n https://auvencecom.sharepoint.com/sites/Nantes/default.aspx", message.channel)
 
     } else if (message.text == "!Hp"){
         rtm.sendMessage("Voici ton planning pour la semaine <@" + message.user  + "" +
@@ -59,12 +58,16 @@ rtm.on(RTM_EVENTS.MESSAGE, function handleRtmMessage(message) {
 
     } else if (message.text == "!Twitter"){
         rtm.sendMessage("Voila la page twitter de Ynov Nantes : \n https://twitter.com/Ynov_Nantes", message.channel);
+
     } else if (message.text == "!Agenda"){
+        rtm.sendMessage("Hey, voilà l'agenda du mois ! N'hésite pas à profiter des différents évènements" +
+            "\n https://calendar.google.com/calendar/embed?src=ynov-nantes.com_md68gq1ud5qc7830ud1jr2dfrg@group.calendar.google.com&ctz=Europe" +
+            "/Paris&pli=1", message.channel);
 
     } else if (message.text == "!Vacances"){
+        rtm.sendMessage("Voici les vacances pour chaque promotions :\n Ingésup B1 : du 19 au 31 décembre\n Ingésup B2 :\n Ingésup B2" +
+            "\n Ingésup B3 :\n Ingésup M1 :\n Ingésup M2 :\n Lim'Art B1 :\n Lim'Art B2 :\n ISEE B1 :\n ISEE B2 :\n ISEE B3 :\n ISEE M1 :\n" +
+            "ISEE M2 :\n", message.channel);
 
-    }
-    else {
-        rtm.sendMessage("Hello <@" + message.user + ">!" + " By sending : " + message.text, message.channel);
     }
 });
