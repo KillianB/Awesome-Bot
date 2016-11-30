@@ -9,7 +9,9 @@ var wh = new IncomingWebhooks('https://hooks.slack.com/services/T2R8LA0KX/B3369K
 });
 // This will send a message "Some Text" using the configuration
 // chosen when creating the webhook
-wh.send('Some text');
+wh.send(payload = {
+    "text": "This is a line of text.\nAnd this is another one."
+});
 
 // You can pass an optional callback
 wh.send('More text', function () {
