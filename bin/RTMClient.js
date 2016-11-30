@@ -23,20 +23,30 @@ rtm.on(RTM_EVENTS.MESSAGE, function (message) {
 });
 
 rtm.on(rsi.start({ //To test, will probably result in an error -> Can't start simultaneous rss events
-    //Ynov Nantes
+
+    //Facebook - Ynov Nantes
     feed: "https://www.facebook.com/feeds/page.php?format=rss20&id=1583788541925285",
     interval: 3600,
     slackHook: "https://hooks.slack.com/services/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",
     slackIcon: "http://s1.narvii.com/image/tqhm2jdefu4cxmczyg4mknnjata2s4pk_128.jpg",
     slackBotUser: "Awesome Bot",
-    //BDE Ynov
+
+    //Facebook - BDE Ynov
     feed: "https://www.facebook.com/feeds/page.php?format=rss20&id=1057210290979698",
     interval: 3600,
     slackHook: "https://hooks.slack.com/services/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",
     slackIcon: "http://s1.narvii.com/image/tqhm2jdefu4cxmczyg4mknnjata2s4pk_128.jpg",
     slackBotUser: "Awesome Bot",
-    //BDS Ynov
+
+    //Facebook - BDS Ynov
     feed: "https://www.facebook.com/feeds/page.php?format=rss20&id=1218659048150191",
+    interval: 3600,
+    slackHook: "https://hooks.slack.com/services/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",
+    slackIcon: "http://s1.narvii.com/image/tqhm2jdefu4cxmczyg4mknnjata2s4pk_128.jpg",
+    slackBotUser: "Awesome Bot",
+
+    //Twitter - Ynov Nantes
+    feed: "https://twitrss.me/twitter_user_to_rss/?user=Ynov_Nantes",
     interval: 3600,
     slackHook: "https://hooks.slack.com/services/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",
     slackIcon: "http://s1.narvii.com/image/tqhm2jdefu4cxmczyg4mknnjata2s4pk_128.jpg",
