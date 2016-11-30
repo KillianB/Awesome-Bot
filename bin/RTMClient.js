@@ -31,7 +31,7 @@ rtm.on(rsi.start({
     slackBotUser: "Awesome Bot",
 }));
 
-rtm.on(rsi.start({
+/*rtm.on(rsi.start({
     //BDE Ynov
     feed: "https://www.facebook.com/feeds/page.php?format=rss20&id=1057210290979698",
     interval: 3600,
@@ -47,7 +47,7 @@ rtm.on(rsi.start({
     slackHook: "https://hooks.slack.com/services/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",
     slackIcon: "http://s1.narvii.com/image/tqhm2jdefu4cxmczyg4mknnjata2s4pk_128.jpg",
     slackBotUser: "Awesome Bot"
-}));
+}));*/
 
 
 // Wait for the client to connect - DO NOT DELETE
