@@ -1,9 +1,11 @@
 var RtmClient = require('@slack/client').RtmClient;
-var token = process.env.OPENSHIFT_ENV_VAR; // Can't integrate the token in repository -> Failed to auth
+var token = process.env.OPENSHIFT_ENV_VAR || 'xoxb-93294615989-pRyWzyswYeJeKW6vDfYxIZnr'; // Can't integrate the token in repository -> Failed to auth
 var MemoryDataStore = require('@slack/client').MemoryDataStore;
 var CLIENT_EVENTS = require('@slack/client').CLIENT_EVENTS;
 var RTM_EVENTS = require('@slack/client').RTM_EVENTS;
 var rsi = require("rss-slack-integration");
+var IncomingWebhooks = require('@slack/client').IncomingWebhook;
+var wh = new IncomingWebhooks('https://hooks.slack.com/services/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');
 var rtm = new RtmClient(token, {
     // Sets the level of logging we require
     logLevel: "error",
@@ -64,40 +66,193 @@ rtm.on(CLIENT_EVENTS.RTM.RTM_CONNECTION_OPENED, function() {
     console.log('Connected to ' + team.name + ' as ' + user.name);
 });
 
-rtm.on(RTM_EVENTS.MESSAGE, function handleRtmMessage(message) {
+rtm.on(RTM_EVENTS.MESSAGE, function handleRtmMessage(message){
     console.log('Message : ' + message.text + ' from ' + message.user + ' in : ' + message.channel);
 
-    if (message.text == "!Help"){
-        rtm.sendMessage("L'aide n'est pas encore disponible <@" + message.user + "> !!\n Cependant, " +
-            "tu peux toujours envoyer un message à @killian.barreau pour plus d'informations !", message.channel)
+    if (message.text == "!Help") {
+        wh.send(payload = {
+            "channel": message.channel,
+            "attachments": [
+                {
+                    "fallback": "Required plain-text summary of the attachment.",
+                    "color": "#36a64f",
+                    "pretext": "L'aide n'est pas encore disponible mais vous pouvez tout de même contacter @killian.barreau !",
+                    "title": "Awesome Bot Help Documentation",
+                    "title_link": "https://github.com/KillianB/Awesome-Bot",
+                    "fields": [
+                        {
+                            "title": "Awesome Bot",
+                            "value": "Help",
+                            "short": false
+                        }
+                    ],
+                }
+            ]
+        })
+    } else if (message.text == "!Extranet") {
+        wh.send(payload = {
+            "channel": message.channel,
+            "attachments": [
+                {
+                    "fallback": "Required plain-text summary of the attachment.",
+                    "color": "#36a64f",
+                    "pretext": "L'extranet est disponible grâce à ce lien !",
+                    "title": "Extranet",
+                    "title_link": "https://extranet.ynov.com/",
+                    "fields": [
+                        {
+                            "title": "Extranet Ynov",
+                            "short": false
+                        }
+                    ],
+                }
+            ]
+        })
+    } else if (message.text == "!Mail") {
+        wh.send(payload = {
+            "channel": message.channel,
+            "attachments": [
+                {
+                    "fallback": "Required plain-text summary of the attachment.",
+                    "color": "#36a64f",
+                    "pretext": "Hey ! Voilà l'adresse de ta messagerie Ynov !",
+                    "title": "Mailbox Ynov",
+                    "title_link": "https://outlook.office365.com/owa/?realm=ynov.com",
+                    "fields": [
+                        {
+                            "title": "Outlook",
+                            "short": false
+                        }
+                    ],
+                }
+            ]
+        })
+    } else if (message.text == "!Sp") {
+        wh.send(payload = {
+            "channel": message.channel,
+            "attachments": [
+                {
+                    "fallback": "Required plain-text summary of the attachment.",
+                    "color": "#36a64f",
+                    "pretext": "Le sharepoint est disponible à cette adresse !",
+                    "title": "Sharepoint Ynov",
+                    "title_link": "https://auvencecom.sharepoint.com/sites/Nantes/default.aspx",
+                    "fields": [
+                        {
+                            "title": "Microsoft Sharepoint",
+                            "short": false
+                        }
+                    ],
+                }
+            ]
+        })
+    } else if (message.text == "!Hp") {
+        wh.send(payload = {
+            "channel": message.channel,
+            "attachments": [
+                {
+                    "fallback": "Required plain-text summary of the attachment.",
+                    "color": "#36a64f",
+                    "pretext": "Voici ton planning pour la semaine <@" + message.user + "> !",
+                    "title": "Hyperplanning Ynov",
+                    "title_link": "https://scolarite.ynov.com/etudiant?identifiant=cbnQWV6TQcC9u4BT",
+                    "fields": [
+                        {
+                            "title": "Extranet Ynov",
+                            "short": false
+                        }
+                    ],
+                }
+            ]
+        })
+    } else if (message.text == "!Fb") {
+        wh.send(payload = {
+            "channel": message.channel,
+            "attachments": [
+                {
+                    "fallback": "Required plain-text summary of the attachment.",
+                    "color": "#36a64f",
+                    "pretext": "Voila les différentes pages Facebook associées à Ynov Nantes !",
+                    "title": "Page officielle",
+                    "title_link": "https://www.facebook.com/nantes.ynov/?ref=page_internal",
+                    "fields": [
+                        {
+                            "title": "Facebook",
+                            "short": false
+                        }
+                    ],
+                }
+            ],
+            "attachments": [
+                {
+                    "fallback": "Required plain-text summary of the attachment.",
+                    "color": "#36a64f",
+                    "title": "BDE Ynov Nantes",
+                    "title_link": "https://www.facebook.com/groups/bde.ynov.nantes/",
+                    "fields": [
+                        {
+                            "title": "Facebook",
+                            "short": false
+                        }
+                    ],
 
-    } else if (message.text == "!Extranet"){
-        rtm.sendMessage("L'extranet est disponible grâce à ce lien :\n https://extranet.ynov.com/", message.channel)
+                }
+            ],
+            "attachments": [
+                {
+                    "fallback": "Required plain-text summary of the attachment.",
+                    "color": "#36a64f",
+                    "title": "BDS Ynov Nantes",
+                    "title_link": "https://www.facebook.com/groups/1218659048150191/?ref=bookmarks	",
+                    "fields": [
+                        {
+                            "title": "Facebook",
+                            "short": false
+                        }
+                    ],
 
-    } else if (message.text == "!Mail"){
-        rtm.sendMessage("Hey ! Voilà l'adresse de ta messagerie Ynov :\n https://outlook.office365.com/owa/?realm=ynov.com", message.channel)
-
-    } else if (message.text == "!Sp"){
-        rtm.sendMessage("Le sharepoint est disponible à cette adresse : *\n https://auvencecom.sharepoint.com/sites/Nantes/default.aspx", message.channel)
-
-    } else if (message.text == "!Hp"){
-        rtm.sendMessage("Voici ton planning pour la semaine <@" + message.user  + "" +
-            "\n https://scolarite.ynov.com/etudiant?identifiant=cbnQWV6TQcC9u4BT", message.channel)
-
-    } else if (message.text == "!Fb"){
-        rtm.sendMessage("Voila les différentes pages Facebook associées à Ynov Nantes :\n Page officielle :" +
-            "https://www.facebook.com/nantes.ynov/?ref=page_internal\n BDE : https://www.facebook.com/groups/bde.ynov.nantes/" +
-            "\n BDS :https://www.facebook.com/groups/1218659048150191/?ref=bookmarks ", message.channel)
-
-    } else if (message.text == "!Twitter"){
-        rtm.sendMessage("Voila la page twitter de Ynov Nantes : \n https://twitter.com/Ynov_Nantes", message.channel);
-
-    } else if (message.text == "!Agenda"){
-        rtm.sendMessage("Hey, voilà l'agenda du mois ! N'hésite pas à profiter des différents évènements" +
-            "\n https://calendar.google.com/calendar/embed?src=ynov-nantes.com_md68gq1ud5qc7830ud1jr2dfrg@group.calendar.google.com&ctz=Europe" +
-            "/Paris&pli=1", message.channel);
-
-    } else if (message.text == "!Vacances"){
+                }
+            ]
+        })
+    } else if (message.text == "!Twitter") {
+        wh.send(payload = {
+            "channel": message.channel,
+            "attachments": [
+                {
+                    "fallback": "Required plain-text summary of the attachment.",
+                    "color": "#36a64f",
+                    "pretext": "Voila la page twitter de Ynov Nantes !",
+                    "title": "Ynov Nantes",
+                    "title_link": "https://twitter.com/Ynov_Nantes",
+                    "fields": [
+                        {
+                            "title": "Twitter",
+                            "short": false
+                        }
+                    ],
+                }
+            ]
+        })
+    } else if (message.text == "!Agenda") {
+        wh.send(payload = {
+            "channel": message.channel,
+            "attachments": [
+                {
+                    "fallback": "Required plain-text summary of the attachment.",
+                    "color": "#36a64f",
+                    "pretext": "Hey, voilà l'agenda du mois ! N'hésite pas à profiter des différents évènements !",
+                    "title": "Agenda Commun Ynov",
+                    "title_link": "https://calendar.google.com/calendar/embed?src=ynov-nantes.com_md68gq1ud5qc7830ud1jr2dfrg@group.calendar.google.com&ctz=Europe/Paris&pli=1",
+                    "fields": [
+                        {
+                            "title": "Agenda",
+                            "short": false
+                        }
+                    ],
+                }
+            ]
+        })
+    } else if (message.text == "!Vacances") {
         rtm.sendMessage("Voici les vacances pour chaque promotions :\n Ingésup B1 : du 19 au 31 décembre\n Ingésup B2 :\n Ingésup B2" +
             "\n Ingésup B3 :\n Ingésup M1 :\n Ingésup M2 :\n Lim'Art B1 :\n Lim'Art B2 :\n ISEE B1 :\n ISEE B2 :\n ISEE B3 :\n ISEE M1 :\n" +
             "ISEE M2 :\n", message.channel);
