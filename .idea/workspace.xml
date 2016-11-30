@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="69782846-6cc8-48ac-aeb8-24911c007a1d" name="Default" comment="Adding rss feeds">
+    <list default="true" id="69782846-6cc8-48ac-aeb8-24911c007a1d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/RTMClient.js" afterPath="$PROJECT_DIR$/bin/RTMClient.js" />
     </list>
     <ignored path="Awesome Bot.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -663,7 +662,7 @@
       <workItem from="1480365046233" duration="967000" />
       <workItem from="1480407021192" duration="664000" />
       <workItem from="1480407700293" duration="9000" />
-      <workItem from="1480493259686" duration="2074000" />
+      <workItem from="1480493259686" duration="2113000" />
     </task>
     <task id="LOCAL-00001" summary="Adding in Github for Server implementation">
       <created>1479465889227</created>
@@ -763,11 +762,18 @@
       <option name="project" value="LOCAL" />
       <updated>1480365537267</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Adding rss feeds">
+      <created>1480495358669</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1480495358669</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76457000" />
+    <option name="totallyTimeSpent" value="76496000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
