@@ -1,5 +1,5 @@
 var RtmClient = require('@slack/client').RtmClient;
-var token = process.env.OPENSHIFT_ENV_VAR || 'xoxb-93294615989-pRyWzyswYeJeKW6vDfYxIZnr'; // Can't integrate the token in repository -> Failed to auth
+var token = process.env.OPENSHIFT_ENV_VAR; // Can't integrate the token in repository -> Failed to auth
 var MemoryDataStore = require('@slack/client').MemoryDataStore;
 var CLIENT_EVENTS = require('@slack/client').CLIENT_EVENTS;
 var RTM_EVENTS = require('@slack/client').RTM_EVENTS;
@@ -181,9 +181,8 @@ rtm.on(RTM_EVENTS.MESSAGE, function handleRtmMessage(message){
                             "short": false
                         }
                     ],
-                }
-            ],
-            "attachments": [
+                },
+
                 {
                     "fallback": "Required plain-text summary of the attachment.",
                     "color": "#36a64f",
@@ -196,9 +195,8 @@ rtm.on(RTM_EVENTS.MESSAGE, function handleRtmMessage(message){
                         }
                     ],
 
-                }
-            ],
-            "attachments": [
+                },
+
                 {
                     "fallback": "Required plain-text summary of the attachment.",
                     "color": "#36a64f",
