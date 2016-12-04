@@ -33,34 +33,6 @@ rtm.on(rsi.start({ //To test, will probably result in an error -> Can't start si
     slackBotUser: "Awesome Bot",
 }));
 
-rtm.on(rsi.start({
-    //Facebook - BDE Ynov
-    feed: "https://www.facebook.com/feeds/page.php?format=rss20&id=1057210290979698",
-    interval: 3600,
-    slackHook: "https://hooks.slack.com/services/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",
-    slackIcon: "http://s1.narvii.com/image/tqhm2jdefu4cxmczyg4mknnjata2s4pk_128.jpg",
-    slackBotUser: "Awesome Bot"
-}));
-
-rtm.on(rsi.start({
-    //Facebook - BDS Ynov
-    feed: "https://www.facebook.com/feeds/page.php?format=rss20&id=1218659048150191",
-    interval: 3600,
-    slackHook: "https://hooks.slack.com/services/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",
-    slackIcon: "http://s1.narvii.com/image/tqhm2jdefu4cxmczyg4mknnjata2s4pk_128.jpg",
-    slackBotUser: "Awesome Bot"
-}));
-
-rtm.on(rsi.start({
-    //Twitter - Ynov Nantes
-    feed: "https://twitrss.me/twitter_user_to_rss/?user=Ynov_Nantes",
-    interval: 3600,
-    slackHook: "https://hooks.slack.com/services/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",
-    slackIcon: "http://s1.narvii.com/image/tqhm2jdefu4cxmczyg4mknnjata2s4pk_128.jpg",
-    slackBotUser: "Awesome Bot"
-}));
-
-
 // Wait for the client to connect - DO NOT DELETE
 rtm.on(CLIENT_EVENTS.RTM.RTM_CONNECTION_OPENED, function() {
     // Get the user's name
