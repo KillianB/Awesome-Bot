@@ -1,9 +1,12 @@
 var RtmClient = require('@slack/client').RtmClient;
-var token = process.env.OPENSHIFT_ENV_VAR; // Can't integrate the token in repository -> Failed to auth
+var token = process.env.OPENSHIFT_ENV_VAR || 'xoxb-93294615989-i5YpBSASWhcOgsZV0i4INXgC'; // Can't integrate the token in repository -> Failed to auth
 var MemoryDataStore = require('@slack/client').MemoryDataStore;
 var CLIENT_EVENTS = require('@slack/client').CLIENT_EVENTS;
 var RTM_EVENTS = require('@slack/client').RTM_EVENTS;
 var rsi = require("rss-slack-integration");
+var rsi2 = require("rss-slack-integration");
+var rsi3 = require("rss-slack-integration");
+var rsi4 = require("rss-slack-integration");
 var IncomingWebhooks = require('@slack/client').IncomingWebhook;
 var wh = new IncomingWebhooks('https://hooks.slack.com/services/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');
 var rtm = new RtmClient(token, {
@@ -26,11 +29,11 @@ rtm.on(RTM_EVENTS.MESSAGE, function (message) {
 
 rtm.on(rsi.start({ //To test, will probably result in an error -> Can't start simultaneous rss events
     //Facebook - Ynov Nantes
-    feed: "https://www.facebook.com/feeds/page.php?format=rss20&id=1583788541925285",
+    feed: "https://www.facebook.com/feeds/page.php?format=rss20&id=1583788541925285" || "https://www.facebook.com/feeds/page.php?format=rss20&id=1057210290979698" || "https://www.facebook.com/feeds/page.php?format=rss20&id=1218659048150191" || "https://twitrss.me/twitter_user_to_rss/?user=Ynov_Nantes",
     interval: 3600,
     slackHook: "https://hooks.slack.com/services/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",
     slackIcon: "http://s1.narvii.com/image/tqhm2jdefu4cxmczyg4mknnjata2s4pk_128.jpg",
-    slackBotUser: "Awesome Bot",
+    slackBotUser: "Awesome Bot"
 }));
 
 // Wait for the client to connect - DO NOT DELETE
