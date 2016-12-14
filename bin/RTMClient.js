@@ -49,9 +49,6 @@ rtm.on(CLIENT_EVENTS.RTM.RTM_CONNECTION_OPENED, function() {
 
 rtm.on(RTM_EVENTS.MESSAGE, function handleRtmMessage(message){
     console.log('Message : ' + message.text + ' from ' + message.user + ' in : ' + message.channel);
-    var users = rtm.dataStore.getUserByName(rtm.message.user);
-    var id = rtm.dataStore.getUserById(rtm.message.user);
-    var email = rtm.dataStore.getUserByEmail(rtm.message.user);
 
     if (message.text == "!Help") {
         wh.send(payload = {
@@ -239,7 +236,5 @@ rtm.on(RTM_EVENTS.MESSAGE, function handleRtmMessage(message){
             "\n Ingésup B3 :\n Ingésup M1 :\n Ingésup M2 :\n Lim'Art B1 :\n Lim'Art B2 :\n ISEE B1 :\n ISEE B2 :\n ISEE B3 :\n ISEE M1 :\n" +
             "ISEE M2 :\n", message.channel);
 
-    } else if (message.text == "!Info") {
-        rtm.sendMessage("User info :\n Name : " + users.name + "\n UserID : " + id.id + "\n Email : " + email.email, message.channel)
     }
 });
