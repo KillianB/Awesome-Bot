@@ -36,8 +36,8 @@
       <file leaf-file-name="RTMClient.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/bin/RTMClient.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="695">
-              <caret line="239" column="5" lean-forward="true" selection-start-line="239" selection-start-column="5" selection-end-line="239" selection-end-column="5" />
+            <state relative-caret-position="673">
+              <caret line="238" column="289" lean-forward="false" selection-start-line="238" selection-start-column="289" selection-end-line="238" selection-end-column="289" />
               <folding />
             </state>
           </provider>
@@ -786,7 +786,7 @@
       <workItem from="1480934664432" duration="488000" />
       <workItem from="1480935301480" duration="46000" />
       <workItem from="1481533067311" duration="741000" />
-      <workItem from="1481701886043" duration="2526000" />
+      <workItem from="1481701886043" duration="2874000" />
     </task>
     <task id="LOCAL-00001" summary="Adding in Github for Server implementation">
       <created>1479465889227</created>
@@ -1005,11 +1005,18 @@
       <option name="project" value="LOCAL" />
       <updated>1481702853021</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Adding new command">
+      <created>1481705349063</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1481705349063</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="96367000" />
+    <option name="totallyTimeSpent" value="96715000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1142,7 +1149,8 @@
     <MESSAGE value="Applying changes about anwsering.&#10;Changing the displaying of rss feed" />
     <MESSAGE value="Bug on rss feed.&#10;Reverting changes." />
     <MESSAGE value="New strat on rss feed." />
-    <option name="LAST_COMMIT_MESSAGE" value="New strat on rss feed." />
+    <MESSAGE value="Adding new command" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding new command" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1480,8 +1488,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/bin/RTMClient.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="695">
-          <caret line="239" column="5" lean-forward="true" selection-start-line="239" selection-start-column="5" selection-end-line="239" selection-end-column="5" />
+        <state relative-caret-position="673">
+          <caret line="238" column="289" lean-forward="false" selection-start-line="238" selection-start-column="289" selection-end-line="238" selection-end-column="289" />
           <folding />
         </state>
       </provider>

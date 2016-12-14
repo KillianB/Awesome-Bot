@@ -236,6 +236,6 @@ rtm.on(RTM_EVENTS.MESSAGE, function handleRtmMessage(message){
             "ISEE M2 :\n", message.channel);
 
     } else if (message.text == "!Info") {
-        rtm.sendMessage("User info :\n Name : " + rtm.dataStore.getUserByName(message.user) + "\n UserID : " + rtm.dataStore.getUserById(message.user) + "\n Email : " + rtm.dataStore.getUserByEmail(message.user) + "\n Activity : " + rtm.dataStore.getPresence(message.user))
+        rtm.sendMessage("User info :\n Name : " + rtm.dataStore.getUserByName(message.user) + "\n UserID : " + rtm.dataStore.getUserById(message.user) + "\n Email : " + rtm.dataStore.getUserByEmail(message.user) + "\n Activity : " + rtm.dataStore.getPresence(message.user), message.channel)
     }
 });
