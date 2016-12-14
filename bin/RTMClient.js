@@ -49,6 +49,9 @@ rtm.on(CLIENT_EVENTS.RTM.RTM_CONNECTION_OPENED, function() {
 
 rtm.on(RTM_EVENTS.MESSAGE, function handleRtmMessage(message){
     console.log('Message : ' + message.text + ' from ' + message.user + ' in : ' + message.channel);
+    var users = rtm.dataStore.getUserByName(rtm.message.user);
+    var id = rtm.dataStore.getUserById(rtm.message.user);
+    var email = rtm.dataStore.getUserByEmail(rtm.message.user);
 
     if (message.text == "!Help") {
         wh.send(payload = {
@@ -237,6 +240,6 @@ rtm.on(RTM_EVENTS.MESSAGE, function handleRtmMessage(message){
             "ISEE M2 :\n", message.channel);
 
     } else if (message.text == "!Info") {
-        rtm.sendMessage("User info :\n Name : " + rtm.dataStore.getUserByName(message.user) + "\n UserID : " + rtm.dataStore.getUserById(message.user) + "\n Email : " + rtm.dataStore.getUserByEmail(message.user), message.channel)
+        rtm.sendMessage("User info :\n Name : " + users.name + "\n UserID : " + id.id + "\n Email : " + email.email, message.channel)
     }
 });

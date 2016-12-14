@@ -36,8 +36,28 @@
       <file leaf-file-name="RTMClient.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/bin/RTMClient.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="409">
-              <caret line="227" column="42" lean-forward="true" selection-start-line="227" selection-start-column="42" selection-end-line="227" selection-end-column="42" />
+            <state relative-caret-position="691">
+              <caret line="242" column="112" lean-forward="false" selection-start-line="242" selection-start-column="112" selection-end-line="242" selection-end-column="112" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="memory-data-store.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node_modules/@slack/client/lib/data-store/memory-data-store.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="90" column="39" lean-forward="false" selection-start-line="90" selection-start-column="39" selection-end-line="90" selection-end-column="39" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="reactions.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node_modules/@slack/client/lib/data-store/message-handlers/reactions.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-123">
+              <caret line="56" column="8" lean-forward="false" selection-start-line="56" selection-start-column="8" selection-end-line="56" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -796,7 +816,7 @@
       <workItem from="1480934664432" duration="488000" />
       <workItem from="1480935301480" duration="46000" />
       <workItem from="1481533067311" duration="741000" />
-      <workItem from="1481701886043" duration="5079000" />
+      <workItem from="1481701886043" duration="5788000" />
     </task>
     <task id="LOCAL-00001" summary="Adding in Github for Server implementation">
       <created>1479465889227</created>
@@ -1043,11 +1063,18 @@
       <option name="project" value="LOCAL" />
       <updated>1481707540150</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="Changes on new command">
+      <created>1481707903836</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1481707903836</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="98920000" />
+    <option name="totallyTimeSpent" value="99629000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1199,14 +1226,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/node_modules/slack-terminalize/test/config/responses.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/commands.json" />
     <entry file="file://$PROJECT_DIR$/views/error.jade">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1282,13 +1301,6 @@
           <SelectedNodes />
           <Categories />
           <SCOPE>All</SCOPE>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/@slack/client/lib/data-store/memory-data-store.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="17" column="9" lean-forward="false" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -1522,10 +1534,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/slack-client/lib/clients/web/facets/channels.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-519">
+          <caret line="200" column="4" lean-forward="false" selection-start-line="200" selection-start-column="4" selection-end-line="200" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/@slack/client/lib/data-store/message-handlers/reactions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-123">
+          <caret line="56" column="8" lean-forward="false" selection-start-line="56" selection-start-column="8" selection-end-line="56" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/@slack/client/lib/data-store/memory-data-store.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="90" column="39" lean-forward="false" selection-start-line="90" selection-start-column="39" selection-end-line="90" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/bin/RTMClient.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
-          <caret line="227" column="42" lean-forward="true" selection-start-line="227" selection-start-column="42" selection-end-line="227" selection-end-column="42" />
+        <state relative-caret-position="691">
+          <caret line="242" column="112" lean-forward="false" selection-start-line="242" selection-start-column="112" selection-end-line="242" selection-end-column="112" />
           <folding />
         </state>
       </provider>
