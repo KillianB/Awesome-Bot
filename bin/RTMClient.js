@@ -13,8 +13,8 @@ var rtm = new RtmClient(token, {
     // Initialise a data store for our client, this will load additional helper functions for the storing and retrieval of data
     dataStore: new MemoryDataStore()
 });
-var use = "U2R8R8T7T";
-var users = require("slack/methods/").users.info;
+/*var use = "U2R8R8T7T";
+var users = require("slack/methods/").users.info;*/
 
 //Authentication - DO NOT DELETE
 rtm.on(CLIENT_EVENTS.RTM.AUTHENTICATED, function (rtmStartData) {
@@ -238,7 +238,7 @@ rtm.on(RTM_EVENTS.MESSAGE, function handleRtmMessage(message){
             "\n Ingésup B3 :\n Ingésup M1 :\n Ingésup M2 :\n Lim'Art B1 :\n Lim'Art B2 :\n ISEE B1 :\n ISEE B2 :\n ISEE B3 :\n ISEE M1 :\n" +
             "ISEE M2 :\n", message.channel);
 
-    } else if (message.text == "!Info") {
+    } /*else if (message.text == "!Info") {
         users({token, use})
-    }
+    }*/
 });
