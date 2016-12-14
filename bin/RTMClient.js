@@ -4,6 +4,7 @@ var MemoryDataStore = require('@slack/client').MemoryDataStore;
 var CLIENT_EVENTS = require('@slack/client').CLIENT_EVENTS;
 var RTM_EVENTS = require('@slack/client').RTM_EVENTS;
 var rsi = require("rss-slack-integration");
+var WebClient = require("@slack/client").WebClient;
 var IncomingWebhooks = require('@slack/client').IncomingWebhook;
 var wh = new IncomingWebhooks('https://hooks.slack.com/services/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');
 var rtm = new RtmClient(token, {
@@ -236,6 +237,7 @@ rtm.on(RTM_EVENTS.MESSAGE, function handleRtmMessage(message){
             "ISEE M2 :\n", message.channel);
 
     } else if (message.text == "!Info") {
-        rtm.sendMessage("User info :\n Name : " + rtm.dataStore.getUserByName(message.user) + "\n UserID : " + rtm.dataStore.getUserById(message.user) + "\n Email : " + rtm.dataStore.getUserByEmail(message.user) + "\n Activity : " + rtm.getPresence(message.user), message.channel)
+        rtm.sendMessage("User info :\n Name : " + rtm.dataStore.getUserByName(message.user) + "\n UserID : " + rtm.dataStore.getUserById(message.user) + "\n Email : " + rtm.dataStore.getUserByEmail(message.user) + "\n Activity : " +
+            WebClient.getPresence(message.user), message.channel)
     }
 });
