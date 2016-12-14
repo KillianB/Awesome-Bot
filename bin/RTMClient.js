@@ -5,9 +5,6 @@ var CLIENT_EVENTS = require('@slack/client').CLIENT_EVENTS;
 var RTM_EVENTS = require('@slack/client').RTM_EVENTS;
 var rsi = require("rss-slack-integration");
 var request = require("request");
-// The Cities IDs can be found on openweathermap.org (make a search, and look the URI)
-var cities = [2990969];
-var slackBotUri = "https://hooks.slack.com/services/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";
 var IncomingWebhooks = require('@slack/client').IncomingWebhook;
 var wh = new IncomingWebhooks('https://hooks.slack.com/services/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');
 var rtm = new RtmClient(token, {
@@ -16,6 +13,9 @@ var rtm = new RtmClient(token, {
     // Initialise a data store for our client, this will load additional helper functions for the storing and retrieval of data
     dataStore: new MemoryDataStore()
 });
+var use = "U2R8R8T7T";
+
+import users from 'slack/methods/users.info'
 
 //Authentication - DO NOT DELETE
 rtm.on(CLIENT_EVENTS.RTM.AUTHENTICATED, function (rtmStartData) {
@@ -239,35 +239,7 @@ rtm.on(RTM_EVENTS.MESSAGE, function handleRtmMessage(message){
             "\n Ingésup B3 :\n Ingésup M1 :\n Ingésup M2 :\n Lim'Art B1 :\n Lim'Art B2 :\n ISEE B1 :\n ISEE B2 :\n ISEE B3 :\n ISEE M1 :\n" +
             "ISEE M2 :\n", message.channel);
 
-    } else if (message.text == "!Weather") {
-        //Weather
-        request("http://api.openweathermap.org/data/2.5/group?id=" + cities.join(',') + "&units=metric ", function (error, response, body) {
-            if (error != null)
-                return;
-
-            var text = "Hello team, here is the weather forecast for today: \n";
-
-            var weatherForecasts = JSON.parse(body);
-
-            for (var i = weatherForecasts.list.length - 1; i >= 0; i--) {
-                var currentCity = weatherForecasts.list[i];
-
-                text += "*" + currentCity.name + "*: ";
-                text += ":" + currentCity.weather[0].icon + ": ";
-                text += currentCity.weather[0].main + ", " + currentCity.weather[0].description + ". ";
-                text += "Temp: " + currentCity.main.temp + "°c. "
-                text += "\n";
-            }
-            ;
-
-            console.log(text);
-
-            request.post({
-                url: slackBotUri,
-                body: text
-            }, function (error, response, body) {
-                console.log(body);
-            });
-        });
+    } else if (message.text == "!Info") {
+        users({token, use})
     }
 });

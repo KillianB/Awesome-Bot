@@ -17,6 +17,7 @@
     "rss-slack-integration": "^1.0.2",
     "serve-favicon": "~2.3.0",
     "slack-client": "^2.0.6",
-    "slack-terminalize": "^1.0.0"
+    "slack-terminalize": "^1.0.0",
+    "slack": "^8.1.2"
   }
 }
