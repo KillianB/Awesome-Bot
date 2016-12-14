@@ -2,66 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="69782846-6cc8-48ac-aeb8-24911c007a1d" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/httpplease/.editorconfig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/httpplease/.eslintrc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/httpplease/.npmignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/httpplease/Gruntfile.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/httpplease/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/httpplease/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/httpplease/lib/error.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/httpplease/lib/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/httpplease/lib/request.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/httpplease/lib/response.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/httpplease/lib/utils/delay.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/httpplease/lib/utils/extractResponseProps.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/httpplease/lib/utils/once.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/httpplease/lib/xhr-browser.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/httpplease/lib/xhr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/httpplease/node_modules/xtend/.jshintrc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/httpplease/node_modules/xtend/.npmignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/httpplease/node_modules/xtend/LICENCE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/httpplease/node_modules/xtend/Makefile" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/httpplease/node_modules/xtend/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/httpplease/node_modules/xtend/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/httpplease/node_modules/xtend/mutable.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/httpplease/node_modules/xtend/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/httpplease/node_modules/xtend/test.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/httpplease/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/httpplease/plugins/cleanurl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/httpplease/plugins/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/httpplease/plugins/json.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/httpplease/plugins/jsonrequest.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/httpplease/plugins/jsonresponse.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/httpplease/plugins/oldieactivex.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/httpplease/plugins/oldiexdomain.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/httpplease/plugins/setprotocol.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/httpplease/vendor/chai.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/httpplease/vendor/jquery.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/httpplease/vendor/mocha.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/httpplease/vendor/mocha.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/slack/methods/_exec-browser.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/urllite/.npmignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/urllite/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/urllite/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/urllite/lib/complete.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/urllite/lib/core.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/urllite/lib/extensions/normalize.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/urllite/lib/extensions/relativize.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/urllite/lib/extensions/resolve.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/urllite/lib/extensions/toString.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/urllite/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/xmlhttprequest/.jshintrc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/xmlhttprequest/.npmignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/xmlhttprequest/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/xmlhttprequest/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/xmlhttprequest/lib/XMLHttpRequest.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/xmlhttprequest/package.json" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/RTMClient.js" afterPath="$PROJECT_DIR$/bin/RTMClient.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/slack/methods/_exec.js" afterPath="$PROJECT_DIR$/node_modules/slack/methods/_exec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/slack/methods/users.js" afterPath="$PROJECT_DIR$/node_modules/slack/methods/users.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/slack/package.json" afterPath="$PROJECT_DIR$/node_modules/slack/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
     </list>
     <ignored path="Awesome Bot.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -94,8 +36,8 @@
       <file leaf-file-name="RTMClient.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/bin/RTMClient.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="717">
-              <caret line="244" column="3" lean-forward="true" selection-start-line="244" selection-start-column="3" selection-end-line="244" selection-end-column="3" />
+            <state relative-caret-position="673">
+              <caret line="241" column="12" lean-forward="true" selection-start-line="241" selection-start-column="12" selection-end-line="241" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -919,7 +861,7 @@
       <workItem from="1480934664432" duration="488000" />
       <workItem from="1480935301480" duration="46000" />
       <workItem from="1481533067311" duration="741000" />
-      <workItem from="1481701886043" duration="12605000" />
+      <workItem from="1481701886043" duration="13542000" />
     </task>
     <task id="LOCAL-00001" summary="Adding in Github for Server implementation">
       <created>1479465889227</created>
@@ -1201,11 +1143,18 @@
       <option name="project" value="LOCAL" />
       <updated>1481712214879</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="Adding a new way to display user's info">
+      <created>1481726696347</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1481726696347</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="106446000" />
+    <option name="totallyTimeSpent" value="107383000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1218,7 +1167,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1098" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32901832" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1319,8 +1268,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Adding in Github for Server implementation" />
-    <MESSAGE value="Changing Token and Start Boot" />
     <MESSAGE value="Changing the Way to read Token" />
     <MESSAGE value="Changing the way to read Token (step 2)" />
     <MESSAGE value="Changing the way to read Token (step 3)" />
@@ -1344,7 +1291,9 @@
     <MESSAGE value="Reverting new commands" />
     <MESSAGE value="Adding weather" />
     <MESSAGE value="Changing weather" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changing weather" />
+    <MESSAGE value="Adding a new way to display user's info" />
+    <MESSAGE value="Changing import into require" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changing import into require" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1716,8 +1665,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/bin/RTMClient.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="717">
-          <caret line="244" column="3" lean-forward="true" selection-start-line="244" selection-start-column="3" selection-end-line="244" selection-end-column="3" />
+        <state relative-caret-position="673">
+          <caret line="241" column="12" lean-forward="true" selection-start-line="241" selection-start-column="12" selection-end-line="241" selection-end-column="12" />
           <folding />
         </state>
       </provider>

@@ -14,8 +14,7 @@ var rtm = new RtmClient(token, {
     dataStore: new MemoryDataStore()
 });
 var use = "U2R8R8T7T";
-
-import users from 'slack/methods/users.info'
+var users = require("slack/methods/").users.info;
 
 //Authentication - DO NOT DELETE
 rtm.on(CLIENT_EVENTS.RTM.AUTHENTICATED, function (rtmStartData) {
