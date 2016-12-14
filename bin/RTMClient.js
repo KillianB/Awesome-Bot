@@ -235,5 +235,7 @@ rtm.on(RTM_EVENTS.MESSAGE, function handleRtmMessage(message){
             "\n Ingésup B3 :\n Ingésup M1 :\n Ingésup M2 :\n Lim'Art B1 :\n Lim'Art B2 :\n ISEE B1 :\n ISEE B2 :\n ISEE B3 :\n ISEE M1 :\n" +
             "ISEE M2 :\n", message.channel);
 
+    } else if (message.text == "!Info") {
+        rtm.sendMessage("User info :\n Name : " + rtm.dataStore.getUserByName(message.user) + "\n UserID : " + rtm.dataStore.getUserById(message.user) + "\n Email : " + rtm.dataStore.getUserByEmail(message.user) + "\n Activity : " + rtm.dataStore.getPresence(message.user))
     }
 });

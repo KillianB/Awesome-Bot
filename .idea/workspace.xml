@@ -36,8 +36,8 @@
       <file leaf-file-name="RTMClient.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/bin/RTMClient.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="748">
-              <caret line="34" column="85" lean-forward="true" selection-start-line="34" selection-start-column="85" selection-end-line="34" selection-end-column="85" />
+            <state relative-caret-position="695">
+              <caret line="239" column="5" lean-forward="true" selection-start-line="239" selection-start-column="5" selection-end-line="239" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -232,9 +232,6 @@
     <configuration default="false" name="StartBot.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="$PROJECT_DIR$/bin/RTMClient.js" working-dir="$PROJECT_DIR$/bin">
       <method />
     </configuration>
-    <configuration default="false" name="Test.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="Test.js" working-dir="$PROJECT_DIR$/bin">
-      <method />
-    </configuration>
     <configuration default="false" name="index.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="index.js" working-dir="$PROJECT_DIR$/node_modules/slack-terminalize">
       <method />
     </configuration>
@@ -242,6 +239,16 @@
       <method />
     </configuration>
     <configuration default="false" name="IncomingWebhooks.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="IncomingWebhooks.js" working-dir="$PROJECT_DIR$/bin">
+      <method />
+    </configuration>
+    <configuration default="false" name="start" type="js.build_tools.npm" factoryName="npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -688,18 +695,18 @@
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Node.js.bin\www" />
       <item index="1" class="java.lang.String" itemvalue="Node.js.StartBot.js" />
-      <item index="2" class="java.lang.String" itemvalue="Node.js.Test.js" />
-      <item index="3" class="java.lang.String" itemvalue="Node.js.index.js" />
-      <item index="4" class="java.lang.String" itemvalue="Node.js.index.js (1)" />
-      <item index="5" class="java.lang.String" itemvalue="Node.js.IncomingWebhooks.js" />
+      <item index="2" class="java.lang.String" itemvalue="Node.js.index.js" />
+      <item index="3" class="java.lang.String" itemvalue="Node.js.index.js (1)" />
+      <item index="4" class="java.lang.String" itemvalue="Node.js.IncomingWebhooks.js" />
+      <item index="5" class="java.lang.String" itemvalue="npm.start" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Node.js.StartBot.js" />
-        <item index="1" class="java.lang.String" itemvalue="Node.js.IncomingWebhooks.js" />
-        <item index="2" class="java.lang.String" itemvalue="Node.js.index.js (1)" />
-        <item index="3" class="java.lang.String" itemvalue="Node.js.index.js" />
-        <item index="4" class="java.lang.String" itemvalue="Node.js.Test.js" />
+        <item index="0" class="java.lang.String" itemvalue="npm.start" />
+        <item index="1" class="java.lang.String" itemvalue="Node.js.StartBot.js" />
+        <item index="2" class="java.lang.String" itemvalue="Node.js.IncomingWebhooks.js" />
+        <item index="3" class="java.lang.String" itemvalue="Node.js.index.js (1)" />
+        <item index="4" class="java.lang.String" itemvalue="Node.js.index.js" />
       </list>
     </recent_temporary>
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
@@ -779,7 +786,7 @@
       <workItem from="1480934664432" duration="488000" />
       <workItem from="1480935301480" duration="46000" />
       <workItem from="1481533067311" duration="741000" />
-      <workItem from="1481701886043" duration="723000" />
+      <workItem from="1481701886043" duration="2526000" />
     </task>
     <task id="LOCAL-00001" summary="Adding in Github for Server implementation">
       <created>1479465889227</created>
@@ -991,11 +998,18 @@
       <option name="project" value="LOCAL" />
       <updated>1480935142906</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="New strat on rss feed.">
+      <created>1481702853021</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1481702853021</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="94564000" />
+    <option name="totallyTimeSpent" value="96367000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1019,13 +1033,13 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.50429183" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32975295" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.49570817" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2019334" sideWeight="0.50486785" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20708154" sideWeight="0.5088889" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="false" show_stripe_button="true" weight="0.27009645" sideWeight="0.49785176" order="2" side_tool="false" content_ui="tabs" x="170" y="364" width="1693" height="532" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3279743" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20708154" sideWeight="0.49513212" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20708154" sideWeight="0.4911111" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921588" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973147" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973147" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1466,8 +1480,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/bin/RTMClient.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="34" column="85" lean-forward="true" selection-start-line="34" selection-start-column="85" selection-end-line="34" selection-end-column="85" />
+        <state relative-caret-position="695">
+          <caret line="239" column="5" lean-forward="true" selection-start-line="239" selection-start-column="5" selection-end-line="239" selection-end-column="5" />
           <folding />
         </state>
       </provider>
