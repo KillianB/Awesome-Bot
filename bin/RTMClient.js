@@ -239,34 +239,35 @@ rtm.on(RTM_EVENTS.MESSAGE, function handleRtmMessage(message){
             "\n Ingésup B3 :\n Ingésup M1 :\n Ingésup M2 :\n Lim'Art B1 :\n Lim'Art B2 :\n ISEE B1 :\n ISEE B2 :\n ISEE B3 :\n ISEE M1 :\n" +
             "ISEE M2 :\n", message.channel);
 
-    }
+    } else if (message.text == "!Weather") {
+        //Weather
+        request("http://api.openweathermap.org/data/2.5/group?id=" + cities.join(',') + "&units=metric ", function (error, response, body) {
+            if (error != null)
+                return;
 
-    //Weather
-    request("http://api.openweathermap.org/data/2.5/group?id="+cities.join(',')+"&units=metric ", function(error, response, body) {
-        if(error != null)
-            return;
+            var text = "Hello team, here is the weather forecast for today: \n";
 
-        var text = "Hello team, here is the weather forecast for today: \n";
+            var weatherForecasts = JSON.parse(body);
 
-        var weatherForecasts = JSON.parse(body);
+            for (var i = weatherForecasts.list.length - 1; i >= 0; i--) {
+                var currentCity = weatherForecasts.list[i];
 
-        for (var i = weatherForecasts.list.length - 1; i >= 0; i--) {
-            var currentCity= weatherForecasts.list[i];
+                text += "*" + currentCity.name + "*: ";
+                text += ":" + currentCity.weather[0].icon + ": ";
+                text += currentCity.weather[0].main + ", " + currentCity.weather[0].description + ". ";
+                text += "Temp: " + currentCity.main.temp + "°c. "
+                text += "\n";
+            }
+            ;
 
-            text += "*"+currentCity.name+"*: ";
-            text += ":" + currentCity.weather[0].icon + ": ";
-            text += currentCity.weather[0].main + ", " + currentCity.weather[0].description + ". ";
-            text += "Temp: " + currentCity.main.temp + "°c. "
-            text += "\n";
-        };
+            console.log(text);
 
-        console.log(text);
-
-        request.post({
-            url: slackBotUri,
-            body: text
-        }, function(error, response, body){
-            console.log(body);
+            request.post({
+                url: slackBotUri,
+                body: text
+            }, function (error, response, body) {
+                console.log(body);
+            });
         });
-    });
+    }
 });
