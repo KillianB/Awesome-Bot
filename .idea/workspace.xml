@@ -36,8 +36,8 @@
       <file leaf-file-name="RTMClient.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/bin/RTMClient.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="695">
-              <caret line="238" column="5" lean-forward="false" selection-start-line="238" selection-start-column="5" selection-end-line="238" selection-end-column="5" />
+            <state relative-caret-position="5368">
+              <caret line="244" column="131" lean-forward="false" selection-start-line="244" selection-start-column="131" selection-end-line="244" selection-end-column="131" />
               <folding />
             </state>
           </provider>
@@ -776,7 +776,7 @@
       <workItem from="1480934664432" duration="488000" />
       <workItem from="1480935301480" duration="46000" />
       <workItem from="1481533067311" duration="741000" />
-      <workItem from="1481701886043" duration="6276000" />
+      <workItem from="1481701886043" duration="7914000" />
     </task>
     <task id="LOCAL-00001" summary="Adding in Github for Server implementation">
       <created>1479465889227</created>
@@ -1037,11 +1037,18 @@
       <option name="project" value="LOCAL" />
       <updated>1481708613554</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="Reverting new commands">
+      <created>1481709109888</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1481709109888</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="100117000" />
+    <option name="totallyTimeSpent" value="101755000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1177,7 +1184,8 @@
     <MESSAGE value="Adding new command" />
     <MESSAGE value="Adding new command (-_-)" />
     <MESSAGE value="Changes on new command" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changes on new command" />
+    <MESSAGE value="Reverting new commands" />
+    <option name="LAST_COMMIT_MESSAGE" value="Reverting new commands" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1193,7 +1201,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/commands/gem.js" />
     <entry file="file://$PROJECT_DIR$/commands/error.js" />
     <entry file="file://$PROJECT_DIR$/util.js" />
     <entry file="file://$PROJECT_DIR$/commands/help.js" />
@@ -1526,10 +1533,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/request/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-871">
+          <caret line="68" column="8" lean-forward="true" selection-start-line="68" selection-start-column="8" selection-end-line="68" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/bin/RTMClient.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="695">
-          <caret line="238" column="5" lean-forward="false" selection-start-line="238" selection-start-column="5" selection-end-line="238" selection-end-column="5" />
+        <state relative-caret-position="5368">
+          <caret line="244" column="131" lean-forward="false" selection-start-line="244" selection-start-column="131" selection-end-line="244" selection-end-column="131" />
           <folding />
         </state>
       </provider>
