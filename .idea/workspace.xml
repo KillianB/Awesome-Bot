@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="69782846-6cc8-48ac-aeb8-24911c007a1d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/RTMClient.js" afterPath="$PROJECT_DIR$/bin/RTMClient.js" />
     </list>
     <ignored path="Awesome Bot.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -222,7 +221,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -817,7 +816,7 @@
       <workItem from="1482492888072" duration="98000" />
       <workItem from="1483346955621" duration="48000" />
       <workItem from="1483347059722" duration="22000" />
-      <workItem from="1483516215627" duration="1005000" />
+      <workItem from="1483516215627" duration="1161000" />
     </task>
     <task id="LOCAL-00001" summary="Adding in Github for Server implementation">
       <created>1479465889227</created>
@@ -1120,11 +1119,18 @@
       <option name="project" value="LOCAL" />
       <updated>1481728493635</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="Changing rss + adding">
+      <created>1483517446828</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1483517446828</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="110844000" />
+    <option name="totallyTimeSpent" value="111000000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1137,7 +1143,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1098" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32901832" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1238,7 +1244,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Changing the way to read Token (step 2)" />
     <MESSAGE value="Changing the way to read Token (step 3)" />
     <MESSAGE value="Changing the way to read Token (step 4)" />
     <MESSAGE value="Changing the way to read Token (step 5)" />
@@ -1263,7 +1268,8 @@
     <MESSAGE value="Adding a new way to display user's info" />
     <MESSAGE value="Changing import into require" />
     <MESSAGE value="Reverting changes U_U" />
-    <option name="LAST_COMMIT_MESSAGE" value="Reverting changes U_U" />
+    <MESSAGE value="Changing rss + adding" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changing rss + adding" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
