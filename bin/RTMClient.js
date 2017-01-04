@@ -29,9 +29,6 @@ rtm.on(RTM_EVENTS.MESSAGE, function (message) {
 
 rtm.on(rsi.start({ //Need to test if we can add multiple feeds
     //Facebook - Ynov Nantes
-    feed: "https://www.facebook.com/feeds/page.php?format=rss20&id=1583788541925285",
-    feed: "https://www.facebook.com/feeds/page.php?format=rss20&id=1057210290979698",
-    feed: "https://www.facebook.com/feeds/page.php?format=rss20&id=1218659048150191",
     feed: "https://twitrss.me/twitter_user_to_rss/?user=Ynov_Nantes",
     interval: 3600,
     slackHook: "https://hooks.slack.com/services/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",
@@ -234,9 +231,9 @@ rtm.on(RTM_EVENTS.MESSAGE, function handleRtmMessage(message){
             ]
         })
     } else if (message.text == "!Vacances") {
-        rtm.sendMessage("Voici les vacances pour chaque promotions :\n Ingésup B1 : du 19 au 31 décembre\n Ingésup B2 :\n Ingésup B2" +
-            "\n Ingésup B3 :\n Ingésup M1 :\n Ingésup M2 :\n Lim'Art B1 :\n Lim'Art B2 :\n ISEE B1 :\n ISEE B2 :\n ISEE B3 :\n ISEE M1 :\n" +
-            "ISEE M2 :\n", message.channel);
+        rtm.sendMessage("Voici les vacances pour chaque promotions :\n Ingésup B1 :  Du 13/02 au 24/02; Du 10/04 au 21/04.\n Ingésup B2 :  Du 19/12 au 30/12.\n"  + "\n Ingésup B3 :  Du 19/12 au 30/12." +
+            "\n Ingésup M1 : Du 19/12 au 30/12. \n Ingésup M2 : Du 19/12 au 30/12. \n Lim'Art B1 :  Du 13/02 au 24/02; Du 10/04 au 21/04. \n Lim'Art B2 :  Du 13/02 au 24/02; Du 10/04 au 21/04.\n ISEE B1 :  Du 13/02 au 24/02; Du 10/04 au 21/04.\n ISEE B2 :  Du 13/02 au 24/02; Du 10/04 au 21/04.\n ISEE B3 : \n ISEE M1 : Du 19/12 au 30/12.\n" +
+            "ISEE M2 : Du 19/12 au 30/12.\n", message.channel);
 
     } /*else if (message.text == "!Info") {
         users({token, use})
