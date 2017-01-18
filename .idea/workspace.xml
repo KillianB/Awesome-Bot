@@ -46,8 +46,8 @@
       <file leaf-file-name="RTMClient.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/bin/RTMClient.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="8" column="40" lean-forward="false" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
+            <state relative-caret-position="-1958">
+              <caret line="16" column="3" lean-forward="true" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -825,7 +825,7 @@
       <workItem from="1484577470199" duration="60000" />
       <workItem from="1484727235217" duration="29000" />
       <workItem from="1484727391202" duration="26000" />
-      <workItem from="1484728957664" duration="1659000" />
+      <workItem from="1484728957664" duration="2287000" />
     </task>
     <task id="LOCAL-00001" summary="Adding in Github for Server implementation">
       <created>1479465889227</created>
@@ -1149,11 +1149,18 @@
       <option name="project" value="LOCAL" />
       <updated>1484730009630</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="XD">
+      <created>1484730926830</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1484730926830</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="122466000" />
+    <option name="totallyTimeSpent" value="123094000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1267,7 +1274,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Changing the way to read Token (step 4)" />
     <MESSAGE value="Changing the way to read Token (step 5)" />
     <MESSAGE value="Console logs replies a correct text" />
     <MESSAGE value="Adding new commands" />
@@ -1292,7 +1298,8 @@
     <MESSAGE value="Reverting changes U_U" />
     <MESSAGE value="Changing rss + adding" />
     <MESSAGE value="Changing vacances command" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changing vacances command" />
+    <MESSAGE value="XD" />
+    <option name="LAST_COMMIT_MESSAGE" value="XD" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1350,8 +1357,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/bin/RTMClient.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="40" lean-forward="false" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
+        <state relative-caret-position="-1958">
+          <caret line="16" column="3" lean-forward="true" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
           <folding />
         </state>
       </provider>

@@ -1,15 +1,15 @@
-let RtmClient = require('@slack/client').RtmClient;
-let token = process.env.OPENSHIFT_ENV_VAR; // The token is on the dedicated server
-let MemoryDataStore = require('@slack/client').MemoryDataStore;
-let CLIENT_EVENTS = require('@slack/client').CLIENT_EVENTS;
-let RTM_EVENTS = require('@slack/client').RTM_EVENTS;
-let rsi = require("rss-slack-integration");
-let request = require("request");
-let fs = require('fs');
-let info = require('slack/methods/users.info');
-let IncomingWebhooks = require('@slack/client').IncomingWebhook;
-let wh = new IncomingWebhooks('https://hooks.slack.com/services/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');
-let rtm = new RtmClient(token, {
+var RtmClient = require('@slack/client').RtmClient;
+var token = process.env.OPENSHIFT_ENV_VAR; // The token is on the dedicated server
+var MemoryDataStore = require('@slack/client').MemoryDataStore;
+var CLIENT_EVENTS = require('@slack/client').CLIENT_EVENTS;
+var RTM_EVENTS = require('@slack/client').RTM_EVENTS;
+var rsi = require("rss-slack-integration");
+var request = require("request");
+var fs = require('fs');
+var info = require('slack/methods/users.info');
+var IncomingWebhooks = require('@slack/client').IncomingWebhook;
+var wh = new IncomingWebhooks('https://hooks.slack.com/services/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');
+var rtm = new RtmClient(token, {
     // Sets the level of logging we require
     logLevel: "error",
     // Initialise a data store for our client, this will load additional helper functions for the storing and retrieval of data
