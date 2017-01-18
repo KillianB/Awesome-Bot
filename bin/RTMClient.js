@@ -39,16 +39,16 @@ rtm.on(rsi.start({ //Need to test if we can add multiple feeds
 // Wait for the client to connect - DO NOT DELETE
 rtm.on(CLIENT_EVENTS.RTM.RTM_CONNECTION_OPENED, function() {
     // Get the user's name
-    let user = rtm.dataStore.getUserById(rtm.activeUserId);
+    var user = rtm.dataStore.getUserById(rtm.activeUserId);
     // Get the team's name
-    let team = rtm.dataStore.getTeamById(rtm.activeTeamId);
+    var team = rtm.dataStore.getTeamById(rtm.activeTeamId);
     // Log the slack team name and the bot's name
     console.log('Connected to ' + team.name + ' as ' + user.name);
 });
 
 rtm.on(RTM_EVENTS.MESSAGE, function handleRtmMessage(message){
     console.log('Message : ' + message.text + ' from ' + message.user + ' in : ' + message.channel);
-    let user = message.user;
+    var user = message.user;
 
     if (message.text == "!Help") {
         wh.send(payload = {
