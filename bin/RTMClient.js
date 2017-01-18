@@ -1,24 +1,24 @@
-var RtmClient = require('@slack/client').RtmClient;
-var token = process.env.OPENSHIFT_ENV_VAR; // The token is on the dedicated server
-var MemoryDataStore = require('@slack/client').MemoryDataStore;
-var CLIENT_EVENTS = require('@slack/client').CLIENT_EVENTS;
-var RTM_EVENTS = require('@slack/client').RTM_EVENTS;
-var rsi = require("rss-slack-integration");
-var request = require("request");
-var IncomingWebhooks = require('@slack/client').IncomingWebhook;
-var wh = new IncomingWebhooks('https://hooks.slack.com/services/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');
-var rtm = new RtmClient(token, {
+let RtmClient = require('@slack/client').RtmClient;
+let token = process.env.OPENSHIFT_ENV_VAR || 'xoxb-93294615989-aIlmuDMB56ZA76gY33WEliOU'; // The token is on the dedicated server
+let MemoryDataStore = require('@slack/client').MemoryDataStore;
+let CLIENT_EVENTS = require('@slack/client').CLIENT_EVENTS;
+let RTM_EVENTS = require('@slack/client').RTM_EVENTS;
+let rsi = require("rss-slack-integration");
+let request = require("request");
+let fs = require('fs');
+let info = require('slack/methods/users.info');
+let IncomingWebhooks = require('@slack/client').IncomingWebhook;
+let wh = new IncomingWebhooks('https://hooks.slack.com/services/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');
+let rtm = new RtmClient(token, {
     // Sets the level of logging we require
     logLevel: "error",
     // Initialise a data store for our client, this will load additional helper functions for the storing and retrieval of data
     dataStore: new MemoryDataStore()
 });
-/*var use = "U2R8R8T7T";
-var users = require("slack/methods/").users.info;*/
 
 //Authentication - DO NOT DELETE
 rtm.on(CLIENT_EVENTS.RTM.AUTHENTICATED, function (rtmStartData) {
-    console.log("Logged in as ${rtmStartData.self.name} of team ${rtmStartData.team.name}, but not yet connected to a channel");
+    console.log("Logged in as " + rtmStartData.self.name + " of team " + rtmStartData.team.name + " , but not yet connected to a channel");
 });
 // INITIALIZATION - DO NOT DELETE
 rtm.start();
@@ -39,15 +39,16 @@ rtm.on(rsi.start({ //Need to test if we can add multiple feeds
 // Wait for the client to connect - DO NOT DELETE
 rtm.on(CLIENT_EVENTS.RTM.RTM_CONNECTION_OPENED, function() {
     // Get the user's name
-    var user = rtm.dataStore.getUserById(rtm.activeUserId);
+    let user = rtm.dataStore.getUserById(rtm.activeUserId);
     // Get the team's name
-    var team = rtm.dataStore.getTeamById(rtm.activeTeamId);
+    let team = rtm.dataStore.getTeamById(rtm.activeTeamId);
     // Log the slack team name and the bot's name
     console.log('Connected to ' + team.name + ' as ' + user.name);
 });
 
 rtm.on(RTM_EVENTS.MESSAGE, function handleRtmMessage(message){
     console.log('Message : ' + message.text + ' from ' + message.user + ' in : ' + message.channel);
+    let user = message.user;
 
     if (message.text == "!Help") {
         wh.send(payload = {
@@ -56,7 +57,7 @@ rtm.on(RTM_EVENTS.MESSAGE, function handleRtmMessage(message){
                 {
                     "fallback": "Required plain-text summary of the attachment.",
                     "color": "#36a64f",
-                    "pretext": "L'aide n'est pas encore disponible mais vous pouvez tout de même contacter @killian.barreau !",
+                    "pretext": "L'aide est disponible sur Github ! Contacte @killian.barreau pour plus d'informations !",
                     "title": "Awesome Bot Help Documentation",
                     "title_link": "https://github.com/KillianB/Awesome-Bot",
                     "fields": [
@@ -231,11 +232,12 @@ rtm.on(RTM_EVENTS.MESSAGE, function handleRtmMessage(message){
             ]
         })
     } else if (message.text == "!Vacances") {
-        rtm.sendMessage("Voici les vacances pour chaque promotions :\n Ingésup B1 :  Du 13/02 au 24/02; Du 10/04 au 21/04.\n Ingésup B2 :  Du 19/12 au 30/12.\n"  + "\n Ingésup B3 :  Du 19/12 au 30/12." +
-            "\n Ingésup M1 : Du 19/12 au 30/12. \n Ingésup M2 : Du 19/12 au 30/12. \n Lim'Art B1 :  Du 13/02 au 24/02; Du 10/04 au 21/04. \n Lim'Art B2 :  Du 13/02 au 24/02; Du 10/04 au 21/04.\n ISEE B1 :  Du 13/02 au 24/02; Du 10/04 au 21/04.\n ISEE B2 :  Du 13/02 au 24/02; Du 10/04 au 21/04.\n ISEE B3 : \n ISEE M1 : Du 19/12 au 30/12.\n" +
-            "ISEE M2 : Du 19/12 au 30/12.\n", message.channel);
+        rtm.sendMessage("Voici les vacances pour chaque promotions (hors vacances d’été):\n\n              ---- INGESUP ----              " +
+            "\n\nB1 : Du 13/02 au 24/02; Du 10/04 au 21/04.\nB2 : Plus de vacances.\nB3 : Plus de vacances.\nM1 : Plus de vacances.\nM2 : Plus de vacances.\n\n" +
+            "            ---- LIM’ART ----             \n\nB1 : Du 13/02 au 24/02; Du 10/04 au 21/04.\nB2 : Du 13/02 au 24/02; Du 10/04 au 21/04.\n\n" +
+            "              ---- ISEE ----              \n\nB1 : Du 13/02 au 24/02; Du 10/04 au 21/04. \nB2 : Du 13/02 au 24/02; Du 10/04 au 21/04 \nB3 : ?\nM1 : Plus de vacances.\nM2 : Plus de vacances.\n", message.channel);
 
-    } /*else if (message.text == "!Info") {
-        users({token, use})
-    }*/
+    } else if (message.text == "!Info") {
+        info({token, user}, wh.send(this, message.channel));
+    }
 });
