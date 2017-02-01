@@ -1,5 +1,5 @@
 var RtmClient = require('@slack/client').RtmClient;
-var token = process.env.OPENSHIFT_ENV_VAR || 'xoxb-93294615989-2spJLmH0YecXLpNHhpEtfSjP'; // The token is on the dedicated server
+var token = process.env.OPENSHIFT_ENV_VAR; // The token is on the dedicated server
 var MemoryDataStore = require('@slack/client').MemoryDataStore;
 var CLIENT_EVENTS = require('@slack/client').CLIENT_EVENTS;
 var RTM_EVENTS = require('@slack/client').RTM_EVENTS;
