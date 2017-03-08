@@ -237,8 +237,8 @@ rtm.on(RTM_EVENTS.MESSAGE, function handleRtmMessage(message){
             "              ---- ISEE ----              \n\nB1 : Du 13/02 au 24/02; Du 10/04 au 21/04. \nB2 : Du 13/02 au 24/02; Du 10/04 au 21/04 \nB3 : ?\nM1 : Plus de vacances.\nM2 : Plus de vacances.\n", message.channel);
 
     } else if (message.text == "!Info") {
-        var data = rtm.dataStore.getUserById(message.user);
-        console.log(data);
+        rtm.sendMessage("Cette commande n'est pas disponible !", message.channel);
+        //Not available -> can't retrieve information from users.info method
     } else if (message.text == "!Dice") {
         var dice = Math.round(Math.random());
         if (dice == 1) {
