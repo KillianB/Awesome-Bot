@@ -165,7 +165,7 @@ rtm.on(RTM_EVENTS.MESSAGE, function handleRtmMessage(message){
 
                 {
                     "fallback": "Required plain-text summary of the attachment.",
-                    "color": "#10a600",
+                    "color": "#36a64f",
                     "title": "BDE Ynov Nantes",
                     "title_link": "https://www.facebook.com/groups/bde.ynov.nantes/",
                     "fields": [
@@ -246,5 +246,26 @@ rtm.on(RTM_EVENTS.MESSAGE, function handleRtmMessage(message){
         } else {
             rtm.sendMessage("La pièce est tombée sur face !", message.channel);
         }
+    } else if (message.text.substring(0,4) == "!Poll") {
+        var parameters = [];
+        var allCommand = message.text.substring(5);
+        for (var i = 0; i < allCommand.length; i++) {
+            parameters = allCommand.split(" ");
+        }
+        wh.send(payload = {
+            "channel": message.channel,
+            "text": "Voici votre sondage sur :" + parameters[0] + " !",
+            "attachments": [
+                {
+                    "color": "#36a64f",
+                    "title": parameters[0] + " . Répondez au sondage avec les réactions associés !",
+                    "text": ":heart:,  " + parameters[1] + "\n" +
+                    ":yellow_heart:, " + parameters[2] + "\n" +
+                    ":green_heart:, " + parameters[3] + "\n" +
+                    ":blue_heart:, " + parameters[4] + "\n" +
+                    ":purple_heart:, " + parameters[5],
+                }
+            ]
+        })
     }
 });
